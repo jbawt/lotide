@@ -3,14 +3,11 @@ const assertEqual = (actual, expected) => {
 };
 
 const findKeyByValue = (obj, val) => {
-  let result;
-
   for (const key in obj) {
     if (obj[key] === val) {
-      result = key;
+      return key;
     }
   }
-  return result;
 };
 
 const bestTVShowsByGenre = {
