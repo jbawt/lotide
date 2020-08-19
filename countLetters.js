@@ -6,7 +6,7 @@ const countLetters = (str) => {
   let newStr = str.split(' ').join('');
   let output = {};
 
-  for (const letter of newStr) { 
+  for (const letter of newStr) {
     if (output[letter]) {
       output[letter] += 1;
     } else {

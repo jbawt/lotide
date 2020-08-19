@@ -27,13 +27,13 @@ const without = (source, itemsToRemove) => {
     }
   }
   return newArr;
-}
+};
 console.log(without([1, 2, 3, 1], [1]));
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => [2, 3]
 assertArraysEqual(without(["hello", "how", "are", "you", "you", "hello"], ["hello", "you"]), ["how", "are"]); // => ["how", "are"]
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1", "2"]
-assertArraysEqual(without([2, 4, 5, 9, 8, 10], [2, 5, 8]), [4, 9]) // => [4, 9, 10]
+assertArraysEqual(without([2, 4, 5, 9, 8, 10], [2, 5, 8]), [4, 9]); // => [4, 9, 10]
 
 
 let firstArr = [1, 2, 4, 5, 3];

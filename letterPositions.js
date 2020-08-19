@@ -27,13 +27,15 @@ const letterPositions = (sentence) => {
       if (!results[letter]) {
         results[letter] = [index];
       } else {
-        results[letter].push(index)
+        results[letter].push(index);
       }
       index++;
     }
   }
 
   return results;
-}
+};
 
-//console.log(letterPositions('hello how are you'));
+console.log(letterPositions('hello how are you'));
+
+assertArraysEqual(letterPositions('h'), [0, 5]);
