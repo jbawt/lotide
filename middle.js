@@ -22,22 +22,21 @@ const middle = (arr) => {
   
   if (arr.length < 3) {
     return [];
-  }
-  else if (arr.length % 2 === 0) {
-    middle.push(arr[middleIndex - 1])
+  } else if (arr.length % 2 === 0) {
+    middle.push(arr[middleIndex - 1]);
     middle.push(arr[middleIndex]);
   } else {
     middle.push(arr[middleIndex - 1]);
   }
   return middle;
-}
+};
 
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+console.log(middle([1])); // => []
+console.log(middle([1, 2])); // => []
+console.log(middle([1, 2, 3])); // => [2]
+console.log(middle([1, 2, 3, 4, 5])); // => [3]
+console.log(middle([1, 2, 3, 4])); // => [2, 3]
+console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
 
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1, 2]), []);
