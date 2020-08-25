@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jbawtinheimer/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "clone of the lodash library",
   "main": "lotide",
   "directories": {
     "test": "test"
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/jbawt/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Josh Bawtinheimer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jbawt/lotide/issues"
