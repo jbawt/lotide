@@ -1,23 +1,3 @@
-const eqArrays = (arr1, arr2) => {
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr2[i] !== arr1[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`assertion passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`assertion failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-
-
 const letterPositions = (sentence) => {
   const results = {};
   let index = 0;
@@ -36,6 +16,4 @@ const letterPositions = (sentence) => {
   return results;
 };
 
-console.log(letterPositions('hello how are you'));
-
-assertArraysEqual(letterPositions('h'), [0, 5]);
+module.exports = letterPositions;

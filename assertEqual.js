@@ -1,6 +1,6 @@
 const assertEqual = (actual, expected) => {
-  return actual === expected ? console.log(`Assertion Passed👍: ${actual} === ${expected}`) : console.log(`Assertion Failed👎: ${actual} !== ${expected}`);
+  return actual === expected ? `Assertion Passed👍: ${actual} === ${expected}` : `Assertion Failed👎: ${actual} !== ${expected}`;
 };
 
-assertEqual("wroooong", "Bootcamp");
-assertEqual(1, 1);
+
+module.exports = assertEqual;

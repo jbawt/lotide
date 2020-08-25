@@ -30,22 +30,7 @@ const flatten = (arr) => {
   }
   return outputArr;
 };
-// === PASSED ===
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
-console.log('correct!', flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
-console.log('--------------------------------');
 
-assertArraysEqual(flatten([1, 2, 'hello', [4, 5, 'how'], 'are', 54, [3, 45], 'yes']), [1, 2, 'hello', 4, 5, 'how', 'are', 54, 3, 45, 'yes']);
-console.log('correct!', flatten([1, 2, 'hello', [4, 5, 'how'], 'are', 54, [3, 45], 'yes'])); // => [1, 2, 'hello', 4, 5, 'how', 'are', 54, 3, 45, 'yes']
-console.log('--------------------------------');
+module.exports = flatten;
 
-// === FAILED ===
-
-assertArraysEqual(flatten([1, 2, 4, [5, 6, 3], 4]), [1, 2, 4, 5, 6, 3]); // should be => [1, 2, 4, 5, 6, 3, 4]
-console.log('the real answer is: ', flatten([1, 2, 4, [5, 6, 3], 4]));
-console.log('--------------------------------');
-
-assertArraysEqual(flatten([1, 3, 4, ['hello', 'sure'], 5]), [1, 3, 4, 'hello', 'sure']); // should be => [1, 3, 4, 'hello', 'sure', 5];
-console.log('the real answer is: ', flatten([1, 3, 4, ['hello', 'sure'], 5]));
-console.log('--------------------------------');
 
