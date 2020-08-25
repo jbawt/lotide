@@ -35,20 +35,10 @@ const assertObjectEqual = (actual, expected) => {
   const inspect = require('util').inspect;
 
   if (eqObjects(actual, expected)) {
-    return `✅✅✅ Assertion passed: ${inspect(actual)} === ${inspect(expected)}`;
+    console.log(`✅✅✅ Assertion passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    return `🛑🛑🛑 Assertion failed: ${inspect(actual)} !== ${inspect(expected)}`;
+    console.log(`🛑🛑🛑 Assertion failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
 
 module.exports = assertObjectEqual;
-
-//const ob1 = { a: '1', b: 2, c: '3'}
-//const ob2 = { a: '1', b: 2, c: '3'}
-//const ob3 = { a: 1, b: 2, c: 4};
-//
-//
-//console.log(assertObjectEqual(ob1, ob2)); // => true
-//console.log(assertObjectEqual(ob1, ob3)); // => false
-//console.log(assertObjectEqual(ob2, ob3)); // => false
-
