@@ -41,12 +41,14 @@ const assertObjectEqual = (actual, expected) => {
   }
 };
 
-const ob1 = { a: '1', b: 2, c: '3'}
-const ob2 = { a: '1', b: 2, c: '3'}
-const ob3 = { a: 1, b: 2, c: 4};
+module.exports = assertObjectEqual;
 
-
-console.log(assertObjectEqual(ob1, ob2)); // => true
-console.log(assertObjectEqual(ob1, ob3)); // => false
-console.log(assertObjectEqual(ob2, ob3)); // => false
+//const ob1 = { a: '1', b: 2, c: '3'}
+//const ob2 = { a: '1', b: 2, c: '3'}
+//const ob3 = { a: 1, b: 2, c: 4};
+//
+//
+//console.log(assertObjectEqual(ob1, ob2)); // => true
+//console.log(assertObjectEqual(ob1, ob3)); // => false
+//console.log(assertObjectEqual(ob2, ob3)); // => false
 

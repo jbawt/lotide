@@ -10,6 +10,9 @@ const findKeyByValue = (obj, val) => {
   }
 };
 
+module.exports = findKeyByValue;
+
+/*
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
@@ -23,3 +26,4 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "sci_fi");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
+*/

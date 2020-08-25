@@ -28,6 +28,10 @@ const without = (source, itemsToRemove) => {
   }
   return newArr;
 };
+
+module.exports = without;
+
+/*
 console.log(without([1, 2, 3, 1], [1]));
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => [2, 3]
@@ -46,4 +50,4 @@ assertArraysEqual(without(firstArr, secondArr), expectedArr);
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-
+*/
